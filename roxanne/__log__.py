@@ -37,3 +37,10 @@ NameError: name 'Recursos' is not defined
     (self.x)
 AttributeError: 'Heroi' object has no attribute 'x'
 '''},
+{'date': 'Sat Jun 15 2024 13:45:26.301 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 13
+  self.legenda = html.DIV("O jogo do Gato",Id="_legenda_)
+                                                         ^
+SyntaxError: EOL while scanning string literal
+'''},
