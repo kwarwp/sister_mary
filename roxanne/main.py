@@ -10,15 +10,20 @@ class Recursos:
 class Cena:
     def __init__(self, recurso_cena, jogo):
         CENA1 = "https://imgur.com/0cqfufR.jpeg"
-
+        self.x = 0
         self.cena = html.DIV(Id="_cena_", style={
-        "background-image":f'url({recurso_cena})', "width":"1200px", "height":"700px", "overflow":"hidden"})
+        "backgroundImage":f'url({recurso_cena})', "width":"1200px", "height":"900px", "overflow":"hidden",
+        "backgroundSize":'200% 100%'})
         #self.cena <= html.IMG(src=recurso_cena, style=dict(
         #position="absolute", width="1200px", height="700px", clip="rect(0, 600px, 800px, 0px)"))
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
         position="absolute", left=f"110px", top="0px", color="white"))
         self.cena <= self.legenda
         jogo.jogo <= self.cena
+        
+    def rolar(self):
+        self.x -=50
+        self.cena.style.update({"backgroundPosition": f"{self.x}px"})
         
     def legendar(self, texto):
         self.legenda.innerHTML = texto
@@ -39,6 +44,7 @@ class Heroi:
         self.x += 100
         self.heroi.style.left = f"{self.x}px"
         self.jogo.cena.legendar(f"O gato andou para {self.x}")
+        self.jogo.cena.rolar()
     
     
 class Jogo:
