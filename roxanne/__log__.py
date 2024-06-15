@@ -71,3 +71,10 @@ AttributeError: 'CSSProperty' object has no attribute 'update'
                                                                                                                                                                                            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Jun 15 2024 16:40:31.35 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  self.cena = html.DIV(Id="_cena_", style={
+                                                                                                                                                                                            ^
+SyntaxError: invalid syntax
+'''},
