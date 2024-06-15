@@ -23,7 +23,8 @@ class Cena:
         
     def rolar(self):
         self.x -=50
-        self.cena.style.update({"backgroundPosition": f"{self.x}px"})
+        #self.cena.style.update({"backgroundPosition": f"{self.x}px"})
+        self.cena.style.backgroundPosition(f"{self.x}px 0px"})
         
     def legendar(self, texto):
         self.legenda.innerHTML = texto
