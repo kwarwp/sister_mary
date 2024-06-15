@@ -18,8 +18,14 @@ class Heroi:
         self.heroi = html.DIV(Id="_heroi_", style=dict(position="absolute", top="400px"))
         self.heroi <= html.IMG(src=recurso_heroi)
         jogo <= self.heroi
-        
+    
+    
+class Jogo:
+    def __init__(self):
+        self.jogo = document["pydiv"]
+        self.jogo.html = ""
+        Cena(Recursos.CENA0, self.jogo)
+        Heroi(Recursos.HEROI0, self.jogo)        
         
 if __name__ == "__main__":
-    Cena(Recursos.CENA0, document["pydiv"])
-    Heroi(Recursos.HEROI0, document["pydiv"])
+    Jogo()
