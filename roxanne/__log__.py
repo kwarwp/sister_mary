@@ -78,3 +78,10 @@ SyntaxError: invalid syntax
                                                                                                                                                                                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Jun 15 2024 16:48:08.28 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 27
+  self.cena.style.backgroundPosition(f"{self.x}px 0px"})
+                                       ^
+SyntaxError: invalid syntax
+'''},
