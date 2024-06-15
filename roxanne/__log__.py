@@ -99,3 +99,10 @@ SyntaxError: invalid syntax
                                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Jun 15 2024 16:50:46.834 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 16
+  "backgroundSize":'200% 100%',"backgrounPosition":'0px 0px})
+                                                             ^
+SyntaxError: EOL while scanning string literal
+'''},
