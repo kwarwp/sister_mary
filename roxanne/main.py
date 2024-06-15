@@ -18,7 +18,7 @@ class Heroi:
         self.heroi = html.DIV(Id="_heroi_", style=dict(
         position="absolute", left=f"{self.x}px", top="400px", transform="scaleX(-1)"))
         self.heroi <= html.IMG(src=recurso_heroi)
-        self.hero.bind("click", self.anda)
+        self.heroi.bind("click", self.anda)
         jogo <= self.heroi
         
     def anda(self, ev=0):
