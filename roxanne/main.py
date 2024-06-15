@@ -11,7 +11,7 @@ class Cena:
         self.cena = html.DIV(Id="_cena_")
         self.cena <= html.IMG(src=recurso_cena)
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
-        position="absolute", left=f"110px", top="0px"))
+        position="absolute", left=f"110px", top="0px", color="white"))
         self.cena <= self.legenda
         jogo <= self.cena
     
@@ -19,6 +19,7 @@ class Cena:
 class Heroi:
     def __init__(self, recurso_heroi, jogo):
         self.x = 0
+        self.jogo = jogo
         self.heroi = html.DIV(Id="_heroi_", style=dict(
         position="absolute", left=f"{self.x}px", top="400px", transform="scaleX(-1)"))
         self.heroi <= html.IMG(src=recurso_heroi)
@@ -28,13 +29,14 @@ class Heroi:
     def anda(self, ev=0):
         self.x += 100
         self.heroi.style.left = f"{self.x}px"
+        self.jogo.cena.legenda.html = f"O gato andou para {self.x}"
     
     
 class Jogo:
     def __init__(self):
         self.jogo = document["pydiv"]
         self.jogo.html = ""
-        Cena(Recursos.CENA0, self.jogo)
+        self.cena = Cena(Recursos.CENA0, self.jogo)
         Heroi(Recursos.HEROI0, self.jogo)        
         
 if __name__ == "__main__":
