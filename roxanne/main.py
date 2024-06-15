@@ -13,7 +13,7 @@ class Cena:
         self.x = 0
         self.cena = html.DIV(Id="_cena_", style={
         "backgroundImage":f'url({recurso_cena})', "width":"1200px", "height":"900px", "overflow":"hidden",
-        "backgroundSize":'200% 100%'})
+        "backgroundSize":'200% 100%',"backgrounPosition":'0px 0px'})
         #self.cena <= html.IMG(src=recurso_cena, style=dict(
         #position="absolute", width="1200px", height="700px", clip="rect(0, 600px, 800px, 0px)"))
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
@@ -24,7 +24,7 @@ class Cena:
     def rolar(self):
         self.x -=50
         #self.cena.style.update({"backgroundPosition": f"{self.x}px"})
-        self.cena.style.backgroundPosition(f"{self.x}px 0px"})
+        self.cena.style.backgroundPosition = f"{self.x}px 0px"
         
     def legendar(self, texto):
         self.legenda.innerHTML = texto
