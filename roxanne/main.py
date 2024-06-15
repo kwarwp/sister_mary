@@ -9,8 +9,10 @@ class Recursos:
     
 class Cena:
     def __init__(self, recurso_cena, jogo):
+        CENA1 = "https://imgur.com/0cqfufR.jpeg"
+
         self.cena = html.DIV(Id="_cena_", style={
-        "background-image":recurso_cena, "width":"1200px", "height":"700px", "overflow":"hidden"})
+        "background-image":CENA1, "width":"1200px", "height":"700px", "overflow":"hidden"})
         #self.cena <= html.IMG(src=recurso_cena, style=dict(
         #position="absolute", width="1200px", height="700px", clip="rect(0, 600px, 800px, 0px)"))
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
