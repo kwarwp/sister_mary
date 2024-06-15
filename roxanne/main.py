@@ -10,6 +10,9 @@ class Cena:
     def __init__(self, recurso_cena, jogo):
         self.cena = html.DIV(Id="_cena_")
         self.cena <= html.IMG(src=recurso_cena)
+        self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
+        position="absolute", left=f"110px", top="0px"))
+        self.cena <= self.legenda
         jogo <= self.cena
     
     
