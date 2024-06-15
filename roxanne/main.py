@@ -13,7 +13,11 @@ class Cena:
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
         position="absolute", left=f"110px", top="0px", color="white"))
         self.cena <= self.legenda
-        jogo <= self.cena
+        jogo.jogo <= self.cena
+        
+    def legendar(self, texto):
+        self.legenda.innerHTML = texto
+        
     
     
 class Heroi:
@@ -24,20 +28,20 @@ class Heroi:
         position="absolute", left=f"{self.x}px", top="400px", transform="scaleX(-1)"))
         self.heroi <= html.IMG(src=recurso_heroi)
         self.heroi.bind("click", self.anda)
-        jogo <= self.heroi
+        jogo.jogo <= self.heroi
         
     def anda(self, ev=0):
         self.x += 100
         self.heroi.style.left = f"{self.x}px"
-        self.jogo.cena.legenda.html = f"O gato andou para {self.x}"
+        self.jogo.cena.legendar(f"O gato andou para {self.x}")
     
     
 class Jogo:
     def __init__(self):
         self.jogo = document["pydiv"]
         self.jogo.html = ""
-        self.cena = Cena(Recursos.CENA0, self.jogo)
-        Heroi(Recursos.HEROI0, self.jogo)        
+        self.cena = Cena(Recursos.CENA0, self)
+        Heroi(Recursos.HEROI0, self)        
         
 if __name__ == "__main__":
     Jogo()
