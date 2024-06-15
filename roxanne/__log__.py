@@ -64,3 +64,10 @@ SyntaxError: EOL while scanning string literal
     self.cena.style.update({"background-image": recurso_cena})
 AttributeError: 'CSSProperty' object has no attribute 'update'
 '''},
+{'date': 'Sat Jun 15 2024 16:40:11.388 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  self.cena = html.DIV(Id="_cena_", style={
+                                                                                                                                                                                           ^
+SyntaxError: invalid syntax
+'''},
