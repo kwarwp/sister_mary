@@ -3,13 +3,15 @@
 from browser import document, html
 class Recursos:
     CENA0 = "https://i.imgur.com/kJrBXt8.jpeg"
+    CENA1 = "https://imgur.com/0cqfufR.jpeg"
     HEROI0 = "https://i.imgur.com/WQ2l5kM.png"
     
     
 class Cena:
     def __init__(self, recurso_cena, jogo):
         self.cena = html.DIV(Id="_cena_")
-        self.cena <= html.IMG(src=recurso_cena)
+        self.cena <= html.IMG(src=recurso_cena, style=dict(
+        position="absolute", clip="rect(0, 0px, 1200px, 800px)"))
         self.legenda = html.H1("O jogo do Gato", Id="_legenda_", style=dict(
         position="absolute", left=f"110px", top="0px", color="white"))
         self.cena <= self.legenda
@@ -40,7 +42,7 @@ class Jogo:
     def __init__(self):
         self.jogo = document["pydiv"]
         self.jogo.html = ""
-        self.cena = Cena(Recursos.CENA0, self)
+        self.cena = Cena(Recursos.CENA1, self)
         Heroi(Recursos.HEROI0, self)        
         
 if __name__ == "__main__":
