@@ -1,6 +1,6 @@
 # sister_mary.stacy.main.py
 # Calculadora
-
+'''
 class Calculadora:
     def __init__(self):
         self.ops = dict(a=None, d=None, m=None)
@@ -19,4 +19,25 @@ class Calculadora:
             input("operação inválida")
         
 Calculadora().add().operate()
+  '''
+class Calculadora:
+	def __init__(self):
+    	self.answers = ['m', 'a', 'd']
+    	self.options = str(input('Escolha uma das seguintes operações (m, a, d):'))
+	def run(self):
+    	while True:
+        	if self.options in self.answers:
+                print('Insiraos dois valores:')
+                val1 = int(input('valor 1;'))
+                val2 = int(input('valor 2;'))
+                if self.options == 'm'
+                print(val1, '*', val2, '=', val1 * val2)
+                if self.options == 'a'
+                print(val1, '+', val2, '=', val1 + val2)
+                if self.options == 'd'
+                print(val1, '/', val2, '=', val1 / val2)
+        
+        
+Calculadora().run()
+        
         
