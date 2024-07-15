@@ -30,12 +30,12 @@ class Calculadora:
                 print('Insiraos dois valores:')
                 val1 = int(input('valor 1;'))
                 val2 = int(input('valor 2;'))
-                if self.options == 'm'
-                print(val1, '*', val2, '=', val1 * val2)
-                if self.options == 'a'
-                print(val1, '+', val2, '=', val1 + val2)
-                if self.options == 'd'
-                print(val1, '/', val2, '=', val1 / val2)
+                if self.options == 'm':
+                    print(val1, '*', val2, '=', val1 * val2)
+                elif self.options == 'a':
+                    print(val1, '+', val2, '=', val1 + val2)
+                elif self.options == 'd':
+                    print(val1, '/', val2, '=', val1 / val2)
         
         
 Calculadora().run()
