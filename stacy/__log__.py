@@ -50,3 +50,10 @@ TypeError: add() missing 1 positional argument: op
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Mon Jul 15 2024 09:37:41.527 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  self.answers = ['m', 'a', 'd']
+  ^
+IndentationError: expected an indented block
+'''},
