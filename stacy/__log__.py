@@ -43,3 +43,10 @@ TypeError: add() missing 1 positional argument: op
     Calculadora().add().operate()
 TypeError: add() missing 1 positional argument: op
 '''},
+{'date': 'Mon Jul 15 2024 09:37:17.688 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 25
+  self.answers = ['m', 'a', 'd']
+  ^
+IndentationError: expected an indented block
+'''},
