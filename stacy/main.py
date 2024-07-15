@@ -3,24 +3,34 @@
 
 class Calculadora:
     def __init__(self):
-        self.ops = dict(a=None, d=None, m=None)
+        self.ops = dict(a=self.add, d=self.div, m=self.mul)
         self.reg = 0
+        self.options = "a"
         
     def add(self, op):
-        result = self.reg + op
+        return self.reg + op
+         
+    def div(self, op):
+        return self.reg // op
+         
+    def mul(self, op):
+        return self.reg * op
         
     def operate(self):
-        self.reg = input("escolha um número:")
-        get_ops = input("escolha uma operção (a, d, m):")
-        op = input("escolha outro número:")
-        if get_ops in self.ops:
-            self.ops[get_ops](op)
+        self.reg = int(input("escolha um número:"))
+        # get_ops = input("escolha uma operção (a, d, m):")
+        op = int(input("escolha outro número:"))
+        if self.options in self.ops:
+            input(f" resultado: {self.ops[self.options](op)}")
         else:
             input("operação inválida")
             
     def run(self):
+        self.options = str(input('Escolha uma das seguintes operações (m, a, d):'))
+        self.operate()
         
-Calculadora().add().operate()
+        
+# Calculadora().add().operate()
 
 class Calculadora_:
     def __init__(self):
