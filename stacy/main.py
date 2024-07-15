@@ -24,9 +24,9 @@ class Calculadora:
     def __init__(self):
         self.answers = ['m', 'a', 'd']
         self.options = str(input('Escolha uma das seguintes operações (m, a, d):'))
-	def run(self):
-    	while True:
-        	if self.options in self.answers:
+    def run(self):
+        while True:
+            if self.options in self.answers:
                 print('Insiraos dois valores:')
                 val1 = int(input('valor 1;'))
                 val2 = int(input('valor 2;'))
