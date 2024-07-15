@@ -21,7 +21,7 @@ class Calculadora:
 Calculadora().add().operate()
   '''
 class Calculadora:
-	def __init__(self):
+    def __init__(self):
         self.answers = ['m', 'a', 'd']
         self.options = str(input('Escolha uma das seguintes operações (m, a, d):'))
 	def run(self):
