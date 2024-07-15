@@ -21,7 +21,7 @@ class Calculadora:
         return None
         
     def operate(self):
-        self.options = str(input('Escolha uma das seguintes operações (m, a, d):'))
+        self.options = str(input('Escolha uma das seguintes operações (m, a, d, q=sair):'))
         if self.options == "q":
             return False
         self.reg = int(input("escolha um número:"))
