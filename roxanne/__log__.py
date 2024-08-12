@@ -106,3 +106,10 @@ SyntaxError: invalid syntax
                                                              ^
 SyntaxError: EOL while scanning string literal
 '''},
+{'date': 'Mon Aug 12 2024 17:57:55.862 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 47
+  dx = (xx:= 200 - ev.offsetX)//xx
+           ^
+SyntaxError: invalid syntax
+'''},
