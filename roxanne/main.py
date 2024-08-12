@@ -21,8 +21,8 @@ class Cena:
         self.cena <= self.legenda
         jogo.jogo <= self.cena
         
-    def rolar(self):
-        self.x -=50
+    def rolar(self, dx):
+        self.x -= dx*50
         #self.cena.style.update({"backgroundPosition": f"{self.x}px"})
         self.cena.style.backgroundPosition = f"{self.x}px 0px"
         
@@ -42,10 +42,13 @@ class Heroi:
         jogo.jogo <= self.heroi
         
     def anda(self, ev=0):
-        self.x += 100
+        x, y = ev.clientX, ev.clientY
+        # self.heroi.elt.text = f"x {x} y {y} sx {self.x}"
+        dx = 1+(200 - ev.offsetX)//abs(200 - ev.offsetX+ 0.5)
+        self.x += dx*20
         self.heroi.style.left = f"{self.x}px"
         self.jogo.cena.legendar(f"O gato andou para {self.x}")
-        self.jogo.cena.rolar()
+        self.jogo.cena.rolar(dx)
     
     
 class Jogo:
