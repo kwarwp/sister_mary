@@ -1,2 +1,2 @@
 # sister_mary.libby.main.py
-print("ola")
+from _spy.vitollino.main import Cena, Elemento, Texto 
