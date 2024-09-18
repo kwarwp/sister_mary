@@ -24,3 +24,10 @@ NameError: name 'primeiraCnea' is not defined
                             ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2024 14:16:25.163 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  primeiraCena = Cena(img"https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/c1c69227-99e7-43ad-8f75-665772c6d056/DallEGeneratedImages/dalle-aed7eee9-6be0-49e4-95e6-96524e947e230251675624545434667400.jpg")
+                          ^
+SyntaxError: invalid syntax
+'''},
