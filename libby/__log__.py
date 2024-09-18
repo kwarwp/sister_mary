@@ -31,3 +31,10 @@ SyntaxError: invalid syntax
                           ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2024 14:25:27.272 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  def HistoriaPrimeiraParte
+                            ^
+SyntaxError: invalid syntax
+'''},
