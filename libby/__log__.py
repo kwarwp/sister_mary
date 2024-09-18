@@ -17,3 +17,10 @@
     	primeiraCnea.vai()
 NameError: name 'primeiraCnea' is not defined
 '''},
+{'date': 'Wed Sep 18 2024 14:16:14.947 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 6
+  def HistoriaPrimeiraParte
+                            ^
+SyntaxError: invalid syntax
+'''},
