@@ -45,3 +45,10 @@ SyntaxError: invalid syntax
                                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Wed Sep 18 2024 15:16:55.212 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 8
+  pollyPlummer= Elemento(img=blob:null/dc39cb2c-ce84-45a4-af14-fb90e96b01d1, 
+                                  ^
+SyntaxError: invalid syntax
+'''},
