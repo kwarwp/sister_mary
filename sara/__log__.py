@@ -29,3 +29,10 @@ TypeError: move() missing 1 positional argument: y
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Fri Sep 20 2024 13:23:47.750 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def encerrou(self, x, y)
+                           ^
+SyntaxError: invalid syntax
+'''},
