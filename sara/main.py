@@ -25,21 +25,34 @@ class Pista:
         self.largura = 1
         self.inicio = [0, 4]
         
+    def dentro(self, x, y)
+        x0, x1 = self.inicio - self.largura,self.inicio + self.pista[0] + self.largura
+        oka = (x0 <= x <= x1) and (y1 <= y <= y0)
+        okb = (x2 <= x <= x3) and (y3 <= y <= y2)
+        ok = oka or okb
+        
 class Carro:
     def __init__(self):
         self.carro = [1, 1]
-        self.velocidade = [0, 0]
+        self.velocidade = [1, 0]
         self.posicao = [0, 0]
+        self.tempo = 0
         
     def move(self,x,y):
         self.posicao = [x, y]
         
     def anda(self):
+        self.tempo += 1
         self.posicao = self.posicao[0]+self.velocidade[0], self.posicao[1]+self.velocidade[1]
         
 if __name__ == "__main__":
+    pista = Pista()
     carro = Carro()
+    carro.move(*pista.inicio)
     print(carro.posicao)
-    carro.anda()
-    print(carro.posicao)
+    [carro.anda() for _ in range(3)]
+    print(carro.posicao, carro.tempo)
+    carro.velocidade = [0, -1]
+    [carro.anda() for _ in range(4)]
+    print(carro.posicao, carro.tempo)
         
