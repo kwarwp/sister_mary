@@ -16,9 +16,30 @@ Changelog
 """
 import random
 from random import choice
-print(choice(range(100)))
+# print(choice(range(100)))
 
 
 class Pista:
     def __init__(self):
         self.pista = [3,4]
+        self.largura = 1
+        self.inicio = [0, 4]
+        
+class Carro:
+    def __init__(self):
+        self.carro = [1, 1]
+        self.velocidade = [0, 0]
+        self.posicao = [0, 0]
+        
+    def move(self,x,y):
+        self.posicao = [x, y]
+        
+    def anda(self):
+        self.posicao = self.posicao[0]+self.velocidade[0], self.posicao[1]+self.velocidade[1]
+        
+if __name__ == "__main__":
+    carro = Carro()
+    print(carro.posicao)
+    carro.anda()
+    print(carro.posicao)
+        
