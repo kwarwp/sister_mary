@@ -32,7 +32,7 @@ class Pista:
         
         y0, y1 = self.inicio[1] - self.largura,self.inicio[1] + self.largura
         y2, y3 = self.fim[1] - self.largura,self.fim[1] + self.pista[1] + self.largura 
-        x0, x1, x2, x3, y0, y1, y2, y3 = -1, 4, 2, 4, 3, 5, -1, 5 
+        # x0, x1, x2, x3, y0, y1, y2, y3 = -1, 4, 2, 4, 3, 5, -1, 5 
         oka = (x0 <= x <= x1) and (y0 <= y <= y1)
         okb = (x2 <= x <= x3) and (y2 <= y <= y3)
         ok = oka or okb
