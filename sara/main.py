@@ -26,18 +26,24 @@ class Pista:
         self.inicio = [0, 4]
         self.fim = [3, 0]
         
-    def dentro(self, x, y):
-        x0, x1 = self.inicio[0] - self.largura,self.inicio[0] + self.pista[0] + self.largura
-        x2, x3 = self.fim[0] - self.largura,self.fim[0] +  self.largura 
+    def encerrou(self, x, y):
+        x2, x3 = self.fim[0] - self.largura, self.fim[0] + self.largura 
+        y2, y3 = self.fim[1] - self.largura, self.fim[1] + self.largura 
+        return (x2 <= x <= x3) and (y2 <= y <= y3)
         
-        y0, y1 = self.inicio[1] - self.largura,self.inicio[1] + self.largura
-        y2, y3 = self.fim[1] - self.largura,self.fim[1] + self.pista[1] + self.largura 
+    def dentro(self, x, y):
+        x0, x1 = self.inicio[0] - self.largura, self.inicio[0] + self.pista[0] + self.largura
+        x2, x3 = self.fim[0] - self.largura, self.fim[0] +  self.largura 
+        
+        y0, y1 = self.inicio[1] - self.largura, self.inicio[1] + self.largura
+        y2, y3 = self.fim[1] - self.largura, self.fim[1] + self.pista[1] + self.largura 
         # x0, x1, x2, x3, y0, y1, y2, y3 = -1, 4, 2, 4, 3, 5, -1, 5 
         oka = (x0 <= x <= x1) and (y0 <= y <= y1)
         okb = (x2 <= x <= x3) and (y2 <= y <= y3)
         ok = oka or okb
         return ok
-        
+
+
 class Carro:
     def __init__(self):
         self.carro = [1, 1]
@@ -62,6 +68,8 @@ class Carro:
         carro.velocidade = [0, -1]
         [carro.anda() for _ in range(4)]
         print(carro.posicao, carro.tempo, pista.dentro(*carro.posicao))
+        # print("encerrou", carro.posicao in [tuple(pista.fim)])
+        print("encerrou", pista.encerrou(*carro.posicao))
         
 if __name__ == "__main__":
     carro = Carro()
