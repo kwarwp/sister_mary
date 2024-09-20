@@ -52,14 +52,18 @@ class Carro:
         self.tempo += 1
         self.posicao = self.posicao[0]+self.velocidade[0], self.posicao[1]+self.velocidade[1]
         
+    def manual(self):
+        pista = Pista()
+        carro = Carro()
+        carro.move(*pista.inicio)
+        print(carro.posicao, pista.dentro(*carro.posicao))
+        [carro.anda() for _ in range(3)]
+        print(carro.posicao, carro.tempo, pista.dentro(*carro.posicao))
+        carro.velocidade = [0, -1]
+        [carro.anda() for _ in range(4)]
+        print(carro.posicao, carro.tempo, pista.dentro(*carro.posicao))
+        
 if __name__ == "__main__":
-    pista = Pista()
     carro = Carro()
-    carro.move(*pista.inicio)
-    print(carro.posicao, pista.dentro(*carro.posicao))
-    [carro.anda() for _ in range(3)]
-    print(carro.posicao, carro.tempo, pista.dentro(*carro.posicao))
-    carro.velocidade = [0, -1]
-    [carro.anda() for _ in range(4)]
-    print(carro.posicao, carro.tempo, pista.dentro(*carro.posicao))
+    carro.manual()
         
