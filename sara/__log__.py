@@ -22,3 +22,10 @@ SyntaxError: Unbalanced bracket (
     carro.move(pista.inicio)
 TypeError: move() missing 1 positional argument: y
 '''},
+{'date': 'Fri Sep 20 2024 12:55:11.729 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 29
+  def dentro(self, x, y)
+                         ^
+SyntaxError: invalid syntax
+'''},
