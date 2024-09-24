@@ -922,3 +922,10 @@ AttributeError: 'function' object has no attribute 'vai'
     	HistoriaPortas.vai()
 AttributeError: 'function' object has no attribute 'vai'
 '''},
+{'date': 'Tue Sep 24 2024 19:44:03.512 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  HistoriaPortas.vai()
+  ^
+IndentationError: unexpected indent
+'''},
