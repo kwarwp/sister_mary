@@ -604,3 +604,10 @@ AttributeError: 'function' object has no attribute 'vai'
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 24 2024 19:09:48.628 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 14
+  self.cenaIntroducao = Cena(img = linkCidadeCharn)
+  ^
+IndentationError: expected an indented block
+'''},
