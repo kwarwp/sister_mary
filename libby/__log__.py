@@ -618,3 +618,10 @@ IndentationError: expected an indented block
   ^
 IndentationError: expected an indented block
 '''},
+{'date': 'Tue Sep 24 2024 19:14:11.434 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 22
+  If__name == "__main__":
+                         ^
+SyntaxError: invalid syntax
+'''},
