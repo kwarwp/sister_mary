@@ -11,7 +11,7 @@ LinkPortas = "https://designerapp.officeapps.live.com/designerapp/document.ashx?
 #instruções para a primeira parte da históra
 def HistoriaIntroducao():
 	cenaCharn = Cena(img = LinkCidadeCharn)
-	textoCharn = Texto(cenaCharn, "No universo de fantasia das Crónicas Nárnia , Polly Plummer, uma aventureira e curiosa garotinha de 11 anos, tenta encontrar a chave correta para abrir a porta que a transportará de volta para o jardim da Nárnia, um lugar construído e protegido pelo leão Aslam.")
+	textoCharn = Texto(cenaCharn, "No universo de fantasia das Crónicas Nárnia , Polly Plummer, uma aventureira e curiosa garotinha de 11 anos, fica presa na devastada cidade de Charn.Ajude-a a encontrar a chave correta para abrir a porta que a transportará de volta para o jardim da Nárnia, um lugar mágico construído e protegido pelo leão Aslam")
 	textoCharn.vai()
 	cenaCharn.vai() 
 	HistoriaPortas.vai()
