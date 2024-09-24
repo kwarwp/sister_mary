@@ -1019,3 +1019,9 @@ NameError: name 'historiaPortas' is not defined
     	HistoriaPortas.vai()
 AttributeError: 'function' object has no attribute 'vai'
 '''},
+{'date': 'Tue Sep 24 2024 19:59:45.440 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: obj is undefined
+  module '$exec_1912' line 18
+HistoriaIntroducao()
+'''},
