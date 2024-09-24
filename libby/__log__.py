@@ -1025,3 +1025,9 @@ Exception: obj is undefined
   module '$exec_1912' line 18
 HistoriaIntroducao()
 '''},
+{'date': 'Tue Sep 24 2024 19:59:58.665 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+Exception: obj is undefined
+  module '$exec_1921' line 18
+HistoriaIntroducao()
+'''},
