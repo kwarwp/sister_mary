@@ -14,11 +14,11 @@ def HistoriaIntroducao():
 	textoCharn = Texto(cenaCharn, "No universo de fantasia das Crónicas Nárnia , Polly Plummer, uma aventureira e curiosa garotinha de 11 anos, tenta encontrar a chave correta para abrir a porta que a transportará de volta para o jardim da Nárnia, um lugar construído e protegido pelo leão Aslam.")
 	textoCharn.vai()
 	cenaCharn.vai() 
-HistoriaPortas()
+	HistoriaPortas()
     
-def HitoriaPortas():
-	cenaPortas = Cena(img= "")
-	textoPortas = Texto(cenaPortas, "")
+def HistoriaPortas():
+	cenaPortas = Cena(img= "https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/bf4d9c8d-f5cf-4571-9ac3-b26154c673f6/DallEGeneratedImages/dalle-7ccf45fd-d91c-45e0-a5a9-6fd1c7eefcf10251675091894855557900.jpg&dcHint=BrazilSouth&fileToken=1b21d0be-54e6-4bac-8f89-f042cff4cd62")
+	textoPortas = Texto(cenaPortas, "Ajude Polly encontrar a chave correta para sair da cidade devastada Chan e escapar da feiticeira. ")
 	textoPortas.vai()
 	cenaPortas.vai()
 
