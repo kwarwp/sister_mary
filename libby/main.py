@@ -1,15 +1,4 @@
-# sister_mary.libby.main.py
+# sister_mary.libby.main.py_Raquel Brayner
 from _spy.vitollino.main import Cena, Elemento, Texto 
 
-casa = "https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/c1c69227-99e7-43ad-8f75-665772c6d056/DallEGeneratedImages/dalle-aed7eee9-6be0-49e4-95e6-96524e947e230251675624545434667400.jpg&dcHint=BrazilSouth&fileToken=e02f9fea-6d7e-41e9-a241-8400357fab0b"
-
-def HistoriaPrimeiraParte ():
-	primeiraCena = Cena(img = "https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/c1c69227-99e7-43ad-8f75-665772c6d056/DallEGeneratedImages/dalle-aed7eee9-6be0-49e4-95e6-96524e947e230251675624545434667400.jpg&dcHint=BrazilSouth&fileToken=e02f9fea-6d7e-41e9-a241-8400357fab0b")
-	pollyPlummer= Elemento(img=https://i.pinimg.com/736x/24/01/8f/24018f5afb82cc0099a9396a668579ac.jpg, 
-                            tit="pollyplummer"
-                            style=dict(left=150, top=60, width=60, height=200))
-
-
-	primeiraCena.vai()
-
-HistoriaPrimeiraParte() 
+LinkCidadeCharn ="https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/bf4d9c8d-f5cf-4571-9ac3-b26154c673f6/DallEGeneratedImages/dalle-221735ad-13e5-45a5-ad43-806d169277440251675098881199351800.jpg&dcHint=BrazilSouth&fileToken=1b21d0be-54e6-4bac-8f89-f042cff4cd62"
