@@ -1,5 +1,5 @@
 # sister_mary.kellee.main.py
-from _spy.vitollino.main import Cena,Sala, ELement, Texto, STYLE
+from _spy.vitollino.main import Cena,Sala, STYLE
 
 STYLE['width'] = 900
 STYLE['height'] = "600px"
@@ -14,8 +14,8 @@ portas_sul= Cena(IMAGEM_SUL)
 
 historia=Sala(n=cidadeCharn_norte, s=IMAGEM_SUL)
 
-cidadeCharn_norte.norte.vai()
-portas_sul.sul.vai()
+cidadeCharn_norte.vai()
+portas_sul.vai()
 
 
 
