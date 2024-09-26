@@ -1,5 +1,8 @@
 # sister_mary.kellee.main.py
-from _spy.vitollino.main import Cena,Sala,Texto
+from _spy.vitollino.main import Cena,Sala,Texto, STYLE
+
+STYLE['width'] = 900
+STYLE['height'] = "600px"
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
 IMAGEM_SUL = "https://i.imgur.com/GnOVugz.png" #PORTAS
