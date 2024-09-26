@@ -5,7 +5,7 @@ STYLE['width'] = 900
 STYLE['height'] = "600px"
 
 # salvando o link no código primeiro
-LinkCidadeCharn = "https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/bf4d9c8d-f5cf-4571-9ac3-b26154c673f6/DallEGeneratedImages/dalle-d9cc7766-a659-40ce-953f-0429c00aaf990251675083422591219900.jpg&dcHint=BrazilSouth&fileToken=1b21d0be-54e6-4bac-8f89-f042cff4cd62"
+LinkCidadeCharn = "https://imgur.com/inUG43J"
 LinkPortas = "https://designerapp.officeapps.live.com/designerapp/document.ashx?path=/bf4d9c8d-f5cf-4571-9ac3-b26154c673f6/DallEGeneratedImages/dalle-7ccf45fd-d91c-45e0-a5a9-6fd1c7eefcf10251675091894855557900.jpg&dcHint=BrazilSouth&fileToken=1b21d0be-54e6-4bac-8f89-f042cff4cd62"
 
 #instruções para a primeira parte da históra
