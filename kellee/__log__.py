@@ -102,3 +102,10 @@ TypeError: 'Cena' object is not iterable
     setattr(Sala, nome, Sala(nome=nome, **cena))
 TypeError: 'Cena' object is not iterable
 '''},
+{'date': 'Thu Sep 26 2024 15:25:18.314 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 2
+  from _spy.vitollino.main import Cena,Sala, 
+                                             ^
+SyntaxError: trailing comma not allowed without surrounding parentheses
+'''},
