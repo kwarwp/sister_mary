@@ -16,9 +16,12 @@ portas_oeste= Cena(IMAGEM_OESTE)
 
 
 historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
-TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Crónicas Nárnia""").vai()
+TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Crónicas Nárnia"""foi=).vai()
 
-TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""").vai()
+#def proximaPagina():
+	
+
+#TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""")
 
 cidadeCharn_norte.vai()
 #portas_sul.vai()
