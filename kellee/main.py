@@ -13,8 +13,9 @@ portas_oeste= Cena(IMAGEM_OESTE)
 
 
 historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
-TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Cróicas Nárnia , Polly Plummer, uma aventureira e curiosa garotinha de 11 anos, fica presa na devastada cidade de Charn.
- Ajude-a a encontrar a chave correta para abrir a porta que a transportará de volta para o jardim da Nárnia, um lugar mágico construído e protegido pelo leão Aslam.""").vai()
+TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Crónicas Nárnia""").vai()
+
+TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""").vai()
 
 cidadeCharn_norte.vai()
 #portas_sul.vai()
