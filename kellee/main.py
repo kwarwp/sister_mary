@@ -14,16 +14,20 @@ portas_sul= Cena(IMAGEM_SUL)
 cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
 
+def primeiraParte():
+	#portas_sul=Cena(img=IMAGEM_SUL)
+	TextoPortas=Texto(portas_sul, """Rápido! Só temos 3 tentativas!""")
+	TextoPortas.vai()
+	portas_sul.vai()
 
 historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
-TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""" foi=primeiraParte).vai()
+TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""", foi=primeiraParte).vai()
 
-def primeiraParte():
-	portas_sul=Cena(img=IMAGEM_SUL)
-	Portal_sul.vai()
 
-#def proximaPagina():
-	
+
+
+
+
 
 #TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""")
 
