@@ -15,7 +15,7 @@ cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
 
 
-historia=Sala(n=cidadeCharn_norte, s=IMAGEM_SUL, L=cidadeCharn_leste, O=portas_oeste)
+historia=Sala(n=cidadeCharn_norte, s=portas_sul, L=cidadeCharn_leste, O=portas_oeste)
 
 cidadeCharn_norte.vai()
 portas_sul.vai()
