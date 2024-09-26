@@ -225,3 +225,10 @@ SyntaxError: invalid syntax
                                                                                              ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Sep 26 2024 17:56:39.978 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""" foi=primeiraParte).vai()
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
