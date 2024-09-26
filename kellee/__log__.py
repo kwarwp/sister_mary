@@ -197,3 +197,10 @@ NameError: name 'Textointroducao' is not defined
     TextoPortas=(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""").vai()
 AttributeError: 'tuple' object has no attribute 'vai'
 '''},
+{'date': 'Thu Sep 26 2024 17:34:48.63 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 19
+  TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Crónicas Nárnia"""foi=).vai()
+                                                                                             ^
+SyntaxError: invalid syntax
+'''},
