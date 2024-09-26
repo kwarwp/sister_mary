@@ -6,7 +6,7 @@ STYLE['height'] = "600px"
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
 IMAGEM_SUL = "https://i.imgur.com/GnOVugz.png" #PORTAS
-IMAGEM_LESTE = "https://i.imgur.com/inUG43J.png"
+IMAGEM_LESTE = "https://i.imgur.com/mYyQG3m.png"
 IMAGEM_OESTE ="https://i.imgur.com/GnOVugz.png"
 
 cidadeCharn_norte = Cena(IMAGEM_NORTE)
@@ -16,7 +16,11 @@ portas_oeste= Cena(IMAGEM_OESTE)
 
 
 historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
-TextoIntroducao=Texto(cidadeCharn_norte, """No universo de fantasia das Crónicas Nárnia"""foi=).vai()
+TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""" foi=primeiraParte).vai()
+
+def primeiraParte():
+	portas_sul=Cena(img=IMAGEM_SUL)
+	Portal_sul.vai()
 
 #def proximaPagina():
 	
