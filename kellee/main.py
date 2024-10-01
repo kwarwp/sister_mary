@@ -11,10 +11,10 @@ ElementoChave1="https://i.imgur.com/PymQkYk.png"
 #ElementoChave4=
 
 
-IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN/introduçã
+IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #Introdução|CIDADECHARN
 IMAGEM_LESTE ="https://i.imgur.com/BZq67xa.png"#chamada para abrir as portas
-IMAGEM_SUL = "https://i.imgur.com/V3o4Xsg.png" #portas 
-IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #imagem teste
+IMAGEM_SUL = "https://i.imgur.com/V3o4Xsg.png" #portas|Chaves
+IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #teste
 
 
 cidadeCharn_norte = Cena(IMAGEM_NORTE)
