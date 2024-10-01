@@ -26,7 +26,7 @@ Polly = Elemento(ELementoPolly,h=300,w=350, x=50, y=300)
 
 chaves1= Elemento(ElementoChave1,h=100,w=200, x=50, y=500)
 chaves2= Elemento(ElementoChave2,h=100,w=200, x=250, y=500)
-chaves3= Elemento(ElementoChave3,h=250,w=200, x=600, y=400)
+chaves3= Elemento(ElementoChave3,h=100,w=200, x=600, y=400)
 chaves4= Elemento(ElementoChave4,h=250,w=200, x=700, y=100)
 #chaves.elt.style={'background-size':"400% 100%"} ----teste hacking
 
