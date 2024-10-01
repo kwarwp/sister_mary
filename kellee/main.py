@@ -5,7 +5,10 @@ STYLE['width'] = 900
 STYLE['height'] = "600px"
 
 ELementoPolly="https://i.imgur.com/ON2IIrs.png"
-ElementoChave="https://i.imgur.com/5LAft4z.png"
+ElementoChave1="https://i.imgur.com/PymQkYk.png"
+#ElementoChave2=
+#ElementoChave3=
+#ElementoChave4=
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN/introduçã
@@ -20,8 +23,8 @@ terceiraCena_sul= Cena(IMAGEM_SUL)
 quartaCena_oeste= Cena(IMAGEM_OESTE)
 
 Polly = Elemento(ELementoPolly,h=250,w=200, x=100, y=300)
-chaves= Elemento(ElementoChave,h=250,w=200, x=100, y=300)
-chaves.elt.style={'background-size':"400% 100%"}
+chaves= Elemento(ElementoChave1,h=250,w=200, x=100, y=300)
+#chaves.elt.style={'background-size':"400% 100%"}
 
 
 def terceiraParte(*_):
