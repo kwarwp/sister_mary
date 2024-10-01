@@ -301,3 +301,10 @@ Traceback (most recent call last):
   module <module> line 2
     from _spy.vitollino.main import Cena,Sala,Texto, ELemento, STYLE
 '''},
+{'date': 'Tue Oct 01 2024 15:03:12.27 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  LinkPolly = 
+               ^
+SyntaxError: invalid syntax
+'''},
