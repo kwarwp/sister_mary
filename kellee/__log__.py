@@ -398,3 +398,10 @@ SyntaxError: invalid syntax
                                                                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2024 16:31:08.13 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 23
+  polly=ELemento(ElementoPolly,tit="título_do_elemento",
+                                                                                                                                                                                     ^
+SyntaxError: invalid syntax
+'''},
