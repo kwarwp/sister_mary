@@ -36,9 +36,9 @@ TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas
 #TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""")
 
 cidadeCharn_norte.vai()
-portas_sul.vai()
-cidadeCharn_leste.vai()
-portas_oeste.vai()
+#portas_sul.vai()
+#cidadeCharn_leste.vai()
+#portas_oeste.vai()
 
 
 
