@@ -4,6 +4,7 @@ from _spy.vitollino.main import Cena,Sala,Texto,Elemento,STYLE
 STYLE['width'] = 900
 STYLE['height'] = "600px"
 
+ELementoPolly="https://i.imgur.com/rwi0tql.png"
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
@@ -13,18 +14,21 @@ IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #cadeira
 
 
 cidadeCharn_norte = Cena(IMAGEM_NORTE)
-portas_sul= Cena(IMAGEM_SUL)
+chamada_sul= Cena(IMAGEM_SUL)
 cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
 
+
 def primeiraParte():
 	#portas_sul=Cena(img=IMAGEM_SUL) 
-	TextoPortas=Texto(portas_sul, """Rápido! Só temos 3 tentativas!""")
+	POlly=ELemento(Polly,style=dict(height=60,widht=60, left=600, top=20)
+	Cena = chamada_sul
+	TextoPortas=Texto(chamada_sul, """Rápido! Só temos 3 tentativas!""")
 	TextoPortas.vai()
-	portas_sul.vai()
+	chamada_sul.vai()
 	
 
-historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
+historia=Sala(n=cidadeCharn_norte, s=chamada_sul, l=cidadeCharn_leste, o=portas_oeste)
 TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""", foi=primeiraParte).vai()
 
 
