@@ -22,12 +22,12 @@ segundaCena_leste = Cena(IMAGEM_LESTE)
 terceiraCena_sul= Cena(IMAGEM_SUL)
 quartaCena_oeste= Cena(IMAGEM_OESTE)
 
-Polly = Elemento(ELementoPolly,h=250,w=200, x=100, y=300)
+Polly = Elemento(ELementoPolly,h=300,w=350, x=50, y=300)
 
-chaves1= Elemento(ElementoChave1,h=250,w=200, x=100, y=200)
-chaves2= Elemento(ElementoChave2,h=250,w=200, x=100, y=300)
-chaves3= Elemento(ElementoChave3,h=250,w=200, x=100, y=400)
-chaves4= Elemento(ElementoChave4,h=250,w=200, x=100, y=100)
+chaves1= Elemento(ElementoChave1,h=200,w=200, x=200, y=300)
+chaves2= Elemento(ElementoChave2,h=250,w=200, x=500, y=300)
+chaves3= Elemento(ElementoChave3,h=250,w=200, x=600, y=400)
+chaves4= Elemento(ElementoChave4,h=250,w=200, x=700, y=100)
 #chaves.elt.style={'background-size':"400% 100%"} ----teste hacking
 
 
