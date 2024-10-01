@@ -18,7 +18,7 @@ cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
 
 def primeiraParte():
-	#portas_sul=Cena(img=IMAGEM_SUL)
+	#portas_sul=Cena(img=IMAGEM_SUL) 
 	TextoPortas=Texto(portas_sul, """Rápido! Só temos 3 tentativas!""")
 	TextoPortas.vai()
 	portas_sul.vai()
@@ -36,9 +36,9 @@ TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas
 #TextoPortas=Texto(portas_sul, """Fala polly: Rápido! Só temos 3 tentativas!""")
 
 cidadeCharn_norte.vai()
-#portas_sul.vai()
-#cidadeCharn_leste.vai()
-#portas_oeste.vai()
+portas_sul.vai()
+cidadeCharn_leste.vai()
+portas_oeste.vai()
 
 
 
