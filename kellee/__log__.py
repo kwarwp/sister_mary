@@ -454,3 +454,10 @@ SyntaxError: invalid syntax
                                                     ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Tue Oct 01 2024 17:04:47.447 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 24
+  Polly=ELemento(Polly, style=dict(height=60,widht=60, left=600, top=20)Cena = chamada_sul)
+                                                                         ^
+SyntaxError: invalid syntax
+'''},
