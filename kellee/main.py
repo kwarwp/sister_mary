@@ -22,7 +22,7 @@ segundaCena_leste = Cena(IMAGEM_LESTE)
 terceiraCena_sul= Cena(IMAGEM_SUL)
 quartaCena_oeste= Cena(IMAGEM_OESTE)
 
-Polly = Elemento(ELementoPolly,h=300,w=350, x=50, y=300)
+Polly = Elemento(ELementoPolly,h=300,w=350, x=500, y=300)
 
 chaves1= Elemento(ElementoChave1,h=100,w=200, x=50, y=500)
 chaves2= Elemento(ElementoChave2,h=100,w=200, x=250, y=500)
