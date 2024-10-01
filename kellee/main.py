@@ -6,9 +6,9 @@ STYLE['height'] = "600px"
 
 ELementoPolly="https://i.imgur.com/ON2IIrs.png"
 ElementoChave1="https://i.imgur.com/PymQkYk.png"
-#ElementoChave2=
-#ElementoChave3=
-#ElementoChave4=
+ElementoChave2="https://i.imgur.com/uOsjJyl.png"
+ElementoChave3="https://i.imgur.com/pSEWTrr.png"
+ElementoChave4="https://i.imgur.com/LoLCGBa.png"
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #Introdução|CIDADECHARN
@@ -23,13 +23,20 @@ terceiraCena_sul= Cena(IMAGEM_SUL)
 quartaCena_oeste= Cena(IMAGEM_OESTE)
 
 Polly = Elemento(ELementoPolly,h=250,w=200, x=100, y=300)
-chaves= Elemento(ElementoChave1,h=250,w=200, x=100, y=300)
-#chaves.elt.style={'background-size':"400% 100%"}
+
+chaves1= Elemento(ElementoChave1,h=250,w=200, x=100, y=200)
+chaves2= Elemento(ElementoChave2,h=250,w=200, x=100, y=300)
+chaves3= Elemento(ElementoChave3,h=250,w=200, x=100, y=400)
+chaves4= Elemento(ElementoChave4,h=250,w=200, x=100, y=100)
+#chaves.elt.style={'background-size':"400% 100%"} ----teste hacking
 
 
 def terceiraParte(*_):
 	terceiraCena_sul.vai()
-	chaves.entra(terceiraCena_sul)
+	chaves1.entra(terceiraCena_sul)
+	chaves2.entra(terceiraCena_sul)
+	chaves3.entra(terceiraCena_sul)
+	chaves4.entra(terceiraCena_sul)
 
 
 def segundaParte(*_):
