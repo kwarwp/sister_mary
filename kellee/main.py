@@ -4,7 +4,7 @@ from _spy.vitollino.main import Cena,Sala,Texto,Elemento,STYLE
 STYLE['width'] = 900
 STYLE['height'] = "600px"
 
-ELementoPolly="https://i.imgur.com/rwi0tql.png"
+ELementoPolly="https://i.imgur.com/ON2IIrs.png"
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
