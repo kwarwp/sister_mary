@@ -19,16 +19,15 @@ cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
 Polly = Elemento(ELementoPolly)
 
-def primeiraParte():
-	chamada_sul=Cena(IMAGEM_SUL)
-	Polly=ELemento(Polly, style=dict(height=60,widht=60, left=600, top=20)Cena = chamada_sul)
+def segundaParte():
+	Polly.entra(chamada_sul)
 	TextoPortas=Texto(chamada_sul, """Rápido! Só temos 3 tentativas!""")
 	TextoPortas.vai()
 	chamada_sul.vai()
 	
 
 historia=Sala(n=cidadeCharn_norte, s=chamada_sul, l=cidadeCharn_leste, o=portas_oeste)
-TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""", foi=primeiraParte).vai()
+TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""", foi=segundaParte).vai()
 
 
 
