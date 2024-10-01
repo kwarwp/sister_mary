@@ -10,8 +10,8 @@ ElementoChave="https://i.imgur.com/5LAft4z.png"
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN/introduçã
 IMAGEM_LESTE ="https://i.imgur.com/BZq67xa.png"#chamada para abrir as portas
-IMAGEM_SUL = "https://i.imgur.com/FkeZ1FX.png" #portas 
-IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #cadeira teste
+IMAGEM_SUL = "https://i.imgur.com/V3o4Xsg.png" #portas 
+IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #imagem teste
 
 
 cidadeCharn_norte = Cena(IMAGEM_NORTE)
