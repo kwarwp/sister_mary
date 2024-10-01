@@ -356,3 +356,10 @@ NameError: name 'IMAGEM_OESTE' is not defined
     historia=Sala(n=cidadeCharn_norte, s=portas_sul, l=cidadeCharn_leste, o=portas_oeste)
 NameError: name 'cidadeCharn_leste' is not defined
 '''},
+{'date': 'Tue Oct 01 2024 15:24:56.487 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 7
+  LinkPolly = 
+               ^
+SyntaxError: invalid syntax
+'''},
