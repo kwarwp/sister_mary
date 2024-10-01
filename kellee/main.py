@@ -17,7 +17,7 @@ cidadeCharn_norte = Cena(IMAGEM_NORTE)
 chamada_sul= Cena(IMAGEM_SUL)
 cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
-Polly = Elemento(ELementoPolly,style=dict(height=40,width=100, left=600, top=20))
+Polly = Elemento(ELementoPolly,style=dict(height=30,width=150, left=600, top=20))
 
 def segundaParte():
 	Polly.entra(chamada_sul)
