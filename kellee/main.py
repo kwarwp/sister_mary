@@ -17,11 +17,11 @@ cidadeCharn_norte = Cena(IMAGEM_NORTE)
 chamada_sul= Cena(IMAGEM_SUL)
 cidadeCharn_leste = Cena(IMAGEM_LESTE)
 portas_oeste= Cena(IMAGEM_OESTE)
-
+Polly = Elemento(ELementoPolly)
 
 def primeiraParte():
-	#portas_sul=Cena(img=IMAGEM_SUL) 
-	POlly=ELemento(Polly,style=dict(height=60,widht=60, left=600, top=20)Cena = chamada_sul)
+	chamada_sul=Cena(IMAGEM_SUL)
+	Polly=ELemento(Polly, style=dict(height=60,widht=60, left=600, top=20)Cena = chamada_sul)
 	TextoPortas=Texto(chamada_sul, """Rápido! Só temos 3 tentativas!""")
 	TextoPortas.vai()
 	chamada_sul.vai()
