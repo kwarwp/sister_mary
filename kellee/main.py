@@ -8,8 +8,8 @@ ELementoPolly="https://i.imgur.com/ON2IIrs.png"
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
+IMAGEM_LESTE ="https://i.imgur.com/BZq67xa.png"
 IMAGEM_SUL = "https://i.imgur.com/BZq67xa.png" #chamada para abrir as portas 
-IMAGEM_LESTE = "https://i.imgur.com/QczYuZh.png" #mato
 IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #cadeira
 
 
@@ -27,7 +27,7 @@ def segundaParte():
 	chamada_sul.vai()
 	
 
-historia=Sala(n=cidadeCharn_norte, s=chamada_sul, l=cidadeCharn_leste, o=portas_oeste)
+historia=Sala(n=cidadeCharn_norte, l=chamada_sul, s=cidadeCharn_leste, o=portas_oeste)
 TextoIntroducao=Texto(cidadeCharn_norte,"""No universo de fantasia das Crónicas Nárnia""", foi=segundaParte).vai()
 
 
