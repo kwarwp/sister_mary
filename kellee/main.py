@@ -7,7 +7,7 @@ STYLE['height'] = "600px"
 
 
 IMAGEM_NORTE = "https://i.imgur.com/inUG43J.png" #CIDADECHARN
-IMAGEM_SUL = "https://i.imgur.com/1925t3p.png" #ceu
+IMAGEM_SUL = "https://i.imgur.com/BZq67xa.png" #chamada para abrir as portas 
 IMAGEM_LESTE = "https://i.imgur.com/QczYuZh.png" #mato
 IMAGEM_OESTE ="https://i.imgur.com/rwi0tql.png" #cadeira
 
