@@ -32,11 +32,12 @@ Polly = Elemento(ELementoPolly,h=300,w=350, x=500, y=300)
 
 
 def terceiraParte(*_): 
-	terceiraCena_sul.vai()
-	chaves1.entra(terceiraCena_sul)
-	chaves2.entra(terceiraCena_sul)
-	chaves3.entra(terceiraCena_sul)
-	chaves4.entra(terceiraCena_sul)
+    terceiraCena_sul.vai()
+    return
+    chaves1.entra(terceiraCena_sul)
+    chaves2.entra(terceiraCena_sul)
+    chaves3.entra(terceiraCena_sul)
+    chaves4.entra(terceiraCena_sul)
     
 class chave():
     def __init__(self,imagem,x,y,cena):
