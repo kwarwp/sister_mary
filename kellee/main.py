@@ -52,16 +52,19 @@ class chave():#classe base chave
     def usa(self,*_):
         Texto(self.cena,"Parabéns!Voce voltou pra nárnia!").vai() 
         
-#Instancia da classe chave        
+#classe derivada       
 class chaveErrada(chave):
     conta=0
+    def gameOver(self, *_):
+        Cena().vai()  
     def usa(self, *_):
         chaveErrada.conta+=1
+        
         if chaveErrada.conta>2:
-            Texto(self.cena, "Que pena! Você não conseguiu encontrar a chave certa!")
+            Texto(self.cena, "Que pena! Você não conseguiu encontrar a chave certa!",foi=self.gameOver).vai()
         Texto(self.cena, "Chave errada!").vai()
         
-        
+#Instancia da classe chave         
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 chaves2=chaveErrada(ElementoChave2,x=250, y=500,cena=terceiraCena_sul)
 chaves3=chaveErrada(ElementoChave3,x=450, y=500,cena=terceiraCena_sul)
