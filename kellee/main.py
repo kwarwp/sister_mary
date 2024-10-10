@@ -43,7 +43,10 @@ class chave():
         self.imagem=imagem
         self.x = x
         self.y = y
-        self.elemento=chaves1= Elemento(imagem,h=100,w=200, x=x, y=y, cena=cena)
+        self.elemento=chaves1= Elemento(imagem,h=100,w=200, x=x, y=y, cena=cena, vai=self.usa)
+    
+    def usa(self):
+        Texto(self.cena,"Parabéns!Voce voltou pra nárnia!")    
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 
 def segundaParte(*_):
