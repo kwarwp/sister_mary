@@ -24,10 +24,10 @@ quartaCena_oeste= Cena(IMAGEM_OESTE)
 
 Polly = Elemento(ELementoPolly,h=300,w=350, x=500, y=300)
 
-chaves1= Elemento(ElementoChave1,h=100,w=200, x=50, y=500)
-chaves2= Elemento(ElementoChave2,h=100,w=200, x=250, y=500)
-chaves3= Elemento(ElementoChave3,h=120,w=200, x=450, y=500)
-chaves4= Elemento(ElementoChave4,h=100,w=200, x=700, y=500)
+#chaves1= Elemento(ElementoChave1,h=100,w=200, x=50, y=500)
+#chaves2= Elemento(ElementoChave2,h=100,w=200, x=250, y=500)
+#chaves3= Elemento(ElementoChave3,h=120,w=200, x=450, y=500)
+#chaves4= Elemento(ElementoChave4,h=100,w=200, x=700, y=500)
 #chaves.elt.style={'background-size':"400% 100%"} ----teste hacking
 
 
@@ -37,6 +37,13 @@ def terceiraParte(*_):
 	chaves2.entra(terceiraCena_sul)
 	chaves3.entra(terceiraCena_sul)
 	chaves4.entra(terceiraCena_sul)
+    
+class chave():
+	def __init__(self,imagem,x,y,cena):
+        self.imagem=imagem
+        self.x = x
+        self.y = y
+        sel.elemento=chaves1= Elemento(cena,h=100,w=200, x=x, y=y)
 
 
 def segundaParte(*_):
