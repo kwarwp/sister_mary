@@ -62,6 +62,7 @@ class chaveErrada(chave):
         
         if chaveErrada.conta>2:
             Texto(self.cena, "Que pena! Você não conseguiu encontrar a chave certa!",foi=self.gameOver).vai()
+            return
         Texto(self.cena, "Chave errada!").vai()
         
 #Instancia da classe chave         
