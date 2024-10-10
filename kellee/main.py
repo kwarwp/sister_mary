@@ -48,7 +48,7 @@ class chave():
         self.elemento=chaves1= Elemento(imagem,h=100,w=200, x=x, y=y, cena=cena, vai=self.usa)
     
     def usa(self,*_):
-        Texto(self.cena,"Parabéns!Voce voltou pra nárnia!")  
+        Texto(self.cena,"Parabéns!Voce voltou pra nárnia!").vai()  
         
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 
