@@ -603,3 +603,10 @@ NameError: name 'ElementoChave' is not defined
     chaves= Elemento(ElementoChave,h=250,w=200, x=100, y=300)
 NameError: name 'ElementoChave' is not defined
 '''},
+{'date': 'Thu Oct 10 2024 14:24:06.140 GMt-0300 (Brasilia Standard Time) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 43
+  self.imagem=imagem
+  ^
+IndentationError: expected an indented block
+'''},
