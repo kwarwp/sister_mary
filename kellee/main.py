@@ -54,8 +54,13 @@ class chave():#classe base chave
         
 #Instancia da classe chave        
 class chaveErrada(chave):
+    conta=0
     def usa(self, *_):
+        chaveErrada.conta+=1
+        if chaveErrada.conta>2:
+            Texto(self.cena, "Que pena! Você não conseguiu encontrar a chave certa!")
         Texto(self.cena, "Chave errada!").vai()
+        
         
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 chaves2=chaveErrada(ElementoChave2,x=250, y=500,cena=terceiraCena_sul)
