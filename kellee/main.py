@@ -39,11 +39,11 @@ def terceiraParte(*_):
 	chaves4.entra(terceiraCena_sul)
     
 class chave():
-	def __init__(self,imagem,x,y,cena):
+    def __init__(self,imagem,x,y,cena):
         self.imagem=imagem
         self.x = x
         self.y = y
-        sel.elemento=chaves1= Elemento(cena,h=100,w=200, x=x, y=y)
+        self.elemento=chaves1= Elemento(cena,h=100,w=200, x=x, y=y)
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 
 def segundaParte(*_):
