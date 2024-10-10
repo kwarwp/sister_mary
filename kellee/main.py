@@ -39,25 +39,28 @@ def terceiraParte(*_):
     chaves3.entra(terceiraCena_sul)
     chaves4.entra(terceiraCena_sul)
     
-class chave():
+class chave():#classe base chave
+    #atributo da classe
     def __init__(self,imagem,x,y,cena):
         self.imagem=imagem
         self.x = x
         self.y = y
         self.cena=cena
         self.elemento=chaves1= Elemento(imagem,h=100,w=200, x=x, y=y, cena=cena, vai=self.usa)
-    
+        
+    #metodo da classe chave
     def usa(self,*_):
         Texto(self.cena,"Parabéns!Voce voltou pra nárnia!").vai() 
         
+#Instancia da classe chave        
 class chaveErrada(chave):
     def usa(self, *_):
         Texto(self.cena, "Chave errada!").vai()
         
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
-chaves2=chaveErrada(ElementoChave1,x=250, y=500,cena=terceiraCena_sul)
-
-
+chaves2=chaveErrada(ElementoChave2,x=250, y=500,cena=terceiraCena_sul)
+chaves3=chaveErrada(ElementoChave3,x=450, y=500,cena=terceiraCena_sul)
+chaves4=chaveErrada(ElementoChave4,x=700, y=500,cena=terceiraCena_sul)
 
 
 
