@@ -48,9 +48,19 @@ class chave():
         self.elemento=chaves1= Elemento(imagem,h=100,w=200, x=x, y=y, cena=cena, vai=self.usa)
     
     def usa(self,*_):
-        Texto(self.cena,"Parabéns!Voce voltou pra nárnia!").vai()  
+        Texto(self.cena,"Parabéns!Voce voltou pra nárnia!").vai() 
+        
+class chaveErrada(chave):
+    def usa(self, *_):
+        Texto(self.cena, "Chave errada!").vai()
         
 chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
+chaves2=chaveErrada(ElementoChave1,x=250, y=500,cena=terceiraCena_sul)
+
+
+
+
+
 
 def segundaParte(*_):
 	Polly.entra(segundaCena_leste)
