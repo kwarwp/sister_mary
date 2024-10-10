@@ -44,7 +44,7 @@ class chave():
         self.x = x
         self.y = y
         sel.elemento=chaves1= Elemento(cena,h=100,w=200, x=x, y=y)
-
+chaves1=chave(ElementoChave1,x=50, y=500,cena=terceiraCena_sul)
 
 def segundaParte(*_):
 	Polly.entra(segundaCena_leste)
