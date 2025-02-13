@@ -12,7 +12,9 @@ coisa = Elemento(HEROI0)
 coisa.entra(aqui)
 coisax = 0
 def anda(evento):
-    coisax += 10
-    coisa.x = coisax
+    global coisax, coisa
+    if(evento.keyCode == 37) :
+        coisax += 10
+        coisa.x = coisax
 
-aqui.elt.bind("keypress", anda)
+document.bind("keypress", anda)
