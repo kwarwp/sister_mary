@@ -10,3 +10,9 @@ aqui = Cena(CENA0)
 aqui.vai()
 coisa = Elemento(HEROI0)
 coisa.entra(aqui)
+coisax = 0
+def anda(evento):
+    coisax += 10
+    coisa.x = coisax
+
+aqui.elt.bind("keypress", anda)
