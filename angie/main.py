@@ -13,6 +13,8 @@ coisa.entra(aqui)
 coisax = 0
 def anda(evento):
     global coisax, coisa
+    event.stopPropagation()
+    evento.preventDefault()
     if(evento.keyCode == 37) :
         coisax += 10
         coisa.x = coisax
