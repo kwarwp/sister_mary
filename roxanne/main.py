@@ -21,6 +21,7 @@ class Cena:
         self.cena <= self.legenda
         jogo.jogo <= self.cena
         
+        
     def rolar(self, dx):
         self.x -= dx*50
         #self.cena.style.update({"backgroundPosition": f"{self.x}px"})
@@ -56,7 +57,13 @@ class Jogo:
         self.jogo = document["pydiv"]
         self.jogo.html = ""
         self.cena = Cena(Recursos.CENA1, self)
-        Heroi(Recursos.HEROI0, self)        
+        self.gato = Heroi(Recursos.HEROI0, self)
+        document.bind("keypress", self.keypress)
+        
+    def keypress(self, event):
+        anda = self.gato.x +10
+        self.gato.x = anda
+        self.gato.heroi.style.left = f"{anda}px"
         
 if __name__ == "__main__":
     Jogo()
