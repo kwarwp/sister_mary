@@ -144,3 +144,10 @@ NameError: name 'randint' is not defined
     c.elt.style.overflow="hidden"
 NameError: name 'c' is not defined
 '''},
+{'date': 'Tue Feb 18 2025 17:39:41.759 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  self.layers = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
+                                                                                                                                              ^
+SyntaxError: invalid syntax
+'''},
