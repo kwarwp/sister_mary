@@ -14,8 +14,8 @@ class Lax:
         self.c.elt.style.overflow="hidden"
         # self.e = Elemento(FLORA,w=1250,h=1000, cena = c)
         self.c.vai()
-        self.scenery()
         self.layers = [Elemento(cena=self.c) for _ in range(0, LAYERS)] #[list()]*LAYERS
+        self.scenery()
         #return
         '''
         t = self.sprite(0, 300, 0, 1)
@@ -26,7 +26,7 @@ class Lax:
     def scenery(self, trees=8):
         # tr = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 20*5*layer-randint(0,15), randint(0,20), layer)
         [lay.elt <= self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
-        for layer, lay in enumerate(self.layer) for item in range(0, trees)]
+        for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         #self.layers = [[self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         #for tr in range(0, trees)] for layer in range(LAYERS,1,-1)]
         
