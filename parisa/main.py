@@ -18,8 +18,8 @@ class Lax:
         t = self.sprite(600, 0, 12, 8)
         
     def scenery(self, trees=8):
-        tr = [self.sprite(randint(0,100)*1000, randint(50,100)*layer, randint(0,20), layer)
-        for layer in range(0,10) for _ in range(0, trees)]
+        tr = [self.sprite(randint(0,100)*100, randint(50,100)*layer+200, randint(0,20), layer)
+        for layer in range(1,10) for _ in range(0, trees)]
         
     def sprite(self, x, y, item, layer):
         dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
