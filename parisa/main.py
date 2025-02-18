@@ -1,5 +1,6 @@
 # sister_mary.parisa.main.py
 from _spy.vitollino.main import Cena, Elemento, STYLE
+from random import randint
 STYLE.update(width=1250, height="650px")
 FLORA = "https://i.imgur.com/n3GnL9B.png"
 MATA0 = "https://i.imgur.com/TT2FKyu.jpeg"
