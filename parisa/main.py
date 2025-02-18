@@ -15,7 +15,7 @@ class Lax:
     def sprite(self, x, y, item, layer):
         dw, dh, size = 100 // FX, 100 // FY, FX*FY
         ox, oy = item // FX, item % FX
-        return Elemento(FLORA, w=300 h=300, x=x, y=y, tipo="20% 25%", cena=self.cena)
+        return Elemento(FLORA, w=300, h=300, x=x, y=y, tipo="20% 25%", cena=self.c)
     
         
         
