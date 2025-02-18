@@ -4,6 +4,7 @@ STYLE.update(width=1250, height="650px")
 FLORA = "https://i.imgur.com/n3GnL9B.png"
 MATA0 = "https://i.imgur.com/TT2FKyu.jpeg"
 FX, FY = 5, 4
+TREES = 600
 
 class Lax:
     def __init__(self):
@@ -17,7 +18,8 @@ class Lax:
     def sprite(self, x, y, item, layer):
         dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
         ox, oy = item // FX, item % FX
-        e = Elemento(FLORA, w=300, h=300, x=x, y=y, cena=self.c)
+        size = TREES - layer * 30
+        e = Elemento(FLORA, w=size, h=size, x=x, y=y+layer*15, cena=self.c)
         e.elt.style.backgroundSize = f"{FX*100}% {FY*100}%"
         e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
         #e.elt.style.backgroundPosition = f"50% 66%"
