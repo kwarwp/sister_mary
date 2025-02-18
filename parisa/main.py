@@ -25,7 +25,7 @@ class Lax:
         
     def scenery(self, trees=8):
         # tr = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 20*5*layer-randint(0,15), randint(0,20), layer)
-        [lay.elt <= self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
+        [lay.elt <= self.sprite(item*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         #self.layers = [[self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         #for tr in range(0, trees)] for layer in range(LAYERS,1,-1)]
