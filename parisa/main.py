@@ -11,9 +11,15 @@ class Lax:
         self.c = Cena(MATA0)
         # self.e = Elemento(FLORA,w=1250,h=1000, cena = c)
         self.c.vai()
-        t = self.sprite(0, 0, 0, 0)
-        t = self.sprite(300, 0, 6, 0)
-        t = self.sprite(600, 0, 12, 0)
+        self.scenery()
+        return
+        t = self.sprite(0, 0, 0, 1)
+        t = self.sprite(300, 0, 6, 4)
+        t = self.sprite(600, 0, 12, 8)
+        
+    def scenery(self, trees=8):
+        tr = [self.sprite(randint(0,100)*1000, randint(50,100)*layer, randint(0,20), layer)
+        for layer in range(0,10) for _ in range(0, trees)]
         
     def sprite(self, x, y, item, layer):
         dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
