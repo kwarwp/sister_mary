@@ -17,7 +17,8 @@ class Lax:
         ox, oy = item // FX, item % FX
         e = Elemento(FLORA, w=300, h=300, x=x, y=y, cena=self.c)
         e.elt.style.backgroundSize = f"{FX*100}% {FY*100}%"
-        e.elt.style.backgroundPosition = f"{-ox*dw}% {-oy*dh}%"
+        #e.elt.style.backgroundPosition = f"{-ox*dw}% {-oy*dh}%"
+        e.elt.style.backgroundPosition = f"-25% -20%"
         # e.elt.style.backgroundPositionY = f""
         return e
     
