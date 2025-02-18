@@ -10,15 +10,17 @@ class Lax:
         self.c = Cena(MATA0)
         # self.e = Elemento(FLORA,w=1250,h=1000, cena = c)
         self.c.vai()
-        t = self.sprite(6, 0, 0, 0)
+        t = self.sprite(0, 0, 0, 0)
+        t = self.sprite(300, 0, 6, 0)
+        t = self.sprite(600, 0, 12, 0)
         
     def sprite(self, x, y, item, layer):
-        dw, dh, size = 100 // FX, 100 // FY, FX*FY
+        dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
         ox, oy = item // FX, item % FX
         e = Elemento(FLORA, w=300, h=300, x=x, y=y, cena=self.c)
         e.elt.style.backgroundSize = f"{FX*100}% {FY*100}%"
-        #e.elt.style.backgroundPosition = f"{-ox*dw}% {-oy*dh}%"
-        e.elt.style.backgroundPosition = f"-25% -20%"
+        e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
+        #e.elt.style.backgroundPosition = f"50% 66%"
         # e.elt.style.backgroundPositionY = f""
         return e
     
