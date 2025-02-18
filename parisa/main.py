@@ -14,7 +14,7 @@ class Lax:
         self.c.elt.style.overflow="hidden"
         # self.e = Elemento(FLORA,w=1250,h=1000, cena = c)
         self.c.vai()
-        self.layers = [Elemento(cena=self.c) for _ in range(0, LAYERS)] #[list()]*LAYERS
+        self.layers = [Elemento(w=1300, h=700, cena=self.c) for _ in range(0, LAYERS)] #[list()]*LAYERS
         self.scenery()
         #return
         '''
@@ -25,12 +25,15 @@ class Lax:
         
     def scenery(self, trees=8):
         # tr = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 20*5*layer-randint(0,15), randint(0,20), layer)
-        [lay.elt <= self.sprite(item*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
+        def sl(layer):
+            return 8//(LAYERS - layer+1)*1200
+        [lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,15), layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         #self.layers = [[self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         #for tr in range(0, trees)] for layer in range(LAYERS,1,-1)]
         
     def sprite(self, x, y, item, layer):
+        """Near layer should be more spaced"""
         dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
         ox, oy = item // FX, item % FX
         size = TREES - layer * 30
@@ -40,7 +43,7 @@ class Lax:
         e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
         #e.elt.style.backgroundPosition = f"50% 66%"
         # e.elt.style.backgroundPositionY = f""
-        return e
+        return e.elt
     
         
         
