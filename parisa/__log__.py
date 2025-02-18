@@ -231,3 +231,10 @@ NameError: name 'tr' is not defined
     [lay.elt <= self.sprite(item*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
 TypeError: can't add 'Elemento' object to DOMNode instance
 '''},
+{'date': 'Tue Feb 18 2025 18:17:07.443 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 28
+  def sl(layer)
+                ^
+SyntaxError: invalid syntax
+'''},
