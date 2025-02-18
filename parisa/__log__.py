@@ -211,3 +211,23 @@ AttributeError: 'Lax' object has no attribute 'layers'
     [lay.elt <= self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
 NameError: name 'tr' is not defined
 '''},
+{'date': 'Tue Feb 18 2025 18:00:42.939 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''Traceback (most recent call last):
+  module _core.main line 180
+    dialog.action(lambda *_: self.start()
+  module _core.supygirls_factory line 135
+    self.act(self, lambda *_: self.hide() or extra()) if self.act else None
+  module _core.supygirls_factory line 310
+    return self._first_response(lambda: self._executa_acao(), self.extra, self.error)
+  module _core.supygirls_factory line 282
+    traceback.print_exc(file=sys.stderr)
+  module _core.supygirls_factory line 299
+    exec(self.code, glob)  # dict(__name__="__main__"))
+  module <module> line 47
+    Lax()
+  module <module> line 18
+    self.scenery()
+  module <module> line 28
+    [lay.elt <= self.sprite(item*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
+TypeError: can't add 'Elemento' object to DOMNode instance
+'''},
