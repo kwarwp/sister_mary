@@ -40,6 +40,7 @@ class Lax:
             layer.y = 150 + 100*off -300
             layer.x = layer.x + 65*off
             layer.elt.style.scale = scale
+            layer.elt.style.transition = "left 1s"
         [lay.elt <= self.sprite(150*item-3000, 350, randint(0,15), 1, layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         [off_lay(lay, layer) for layer, lay in enumerate(self.layers)]
