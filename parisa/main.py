@@ -26,6 +26,8 @@ class Lax:
         evento.preventDefault()
         if(evento.keyCode == 37):
             self.move()
+        elif (evento.keyCode == 39):
+            self.move(-20)
             
     def move(self, val=20):
         def mover(lay, val=20):
