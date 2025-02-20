@@ -18,19 +18,19 @@ class Lax:
         self.c.vai()
         self.layers = [Elemento(w=2000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
         self.scenery()        
-        document.bind("keypress", self.anda)
+        document.bind("keydown", self.anda)
 
     def anda(self, evento):
         global coisax, coisa
-        event.stopPropagation()
+        evento.stopPropagation()
         evento.preventDefault()
         if(evento.keyCode == 37):
             self.move()
             
     def move(self, val=20):
-        def mover(lay, val=20)
+        def mover(lay, val=20):
             lay.x = lay.x +val
-        [mover(lay, 20 + 20* layer) for layer, lay in enumerate(self.layers)
+        [mover(lay, 20 + 0* layer) for layer, lay in enumerate(self.layers)]
 
     def scenery(self, trees=16):
         def off_lay(layer, off):
