@@ -32,7 +32,7 @@ class Lax:
     def move(self, val=40):
         def mover(lay, val_):
             lay.x = lay.x +val_
-        [mover(lay, 20 + val* layer) for layer, lay in enumerate(self.layers)]
+        [mover(lay, val* layer) for layer, lay in enumerate(self.layers)]
 
     def scenery(self, trees=32):
         def off_lay(layer, off):
