@@ -30,7 +30,7 @@ class Lax:
             off = (LAYERS-layer+1)
             return fls-flx*off -off*layer*trees
         #[lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,15), layer)
-        [lay.elt <= self.sprite(150*item-300, 350, randint(0,15), 1)
+        [lay.elt <= self.sprite(150*item-300, 350, randint(0,15), 1, layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         [off_lay(lay, layer) for layer, lay in enumerate(self.layers)]
         
@@ -59,17 +59,23 @@ class Lax:
         #self.layers = [[self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         #for tr in range(0, trees)] for layer in range(LAYERS,1,-1)]
         
-    def sprite(self, x, y, item, layer):
+    def sprite(self, x, y, item, layer, ly):
         """Near layer should be more spaced"""
-        item = randint(0,15)
+        item = randint(4,8)
+        item = ly+1
         layer_delta_y = 400//LAYERS
-        dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
+        conta_ = FX - 1 if FX > 1 else 1
+        lado_ = FY - 1 if FY > 1 else 1
+        dw, dh = (100/conta_)*(p % FX), (100/lado_)*(p // FX)
+        # dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
         ox, oy = item // FX, item % FX
+        bp = f"{dw:.2f}% {dh:.2f}%"
         size = TREES - layer * 30
         e = Elemento(FLORA, w=size-10, h=size, x=x, y=y-layer*layer_delta_y, cena=self.c)
         #e.o = layer / 10 + 0.2
         e.elt.style.backgroundSize = f"{FX*100}% {FY*100}%"
-        e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
+        e.elt.style.backgroundPosition = bp
+        # e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
         #e.elt.style.backgroundPosition = f"50% 66%"
         # e.elt.style.backgroundPositionY = f""
         return e.elt
