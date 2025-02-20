@@ -27,12 +27,12 @@ class Lax:
         if(evento.keyCode == 37):
             self.move()
         elif (evento.keyCode == 39):
-            self.move(-20)
+            self.move(-40)
             
-    def move(self, val=20):
-        def mover(lay, val=20):
-            lay.x = lay.x +val
-        [mover(lay, 20 + 40* layer) for layer, lay in enumerate(self.layers)]
+    def move(self, val=40):
+        def mover(lay, val_):
+            lay.x = lay.x +val_
+        [mover(lay, 20 + val* layer) for layer, lay in enumerate(self.layers)]
 
     def scenery(self, trees=32):
         def off_lay(layer, off):
