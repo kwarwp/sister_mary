@@ -34,13 +34,21 @@ KIRI ="https://i.imgur.com/gPnv2KM.png"
 
 class Lax:
     def __init__(self):
+        self.walk = self.right
+        self.sprite = 3
         self.c = Cena(MATA0)
         self.c.elt.style.overflow="hidden"
         self.c.vai()
         self.layers = [Elemento(w=4000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
         self.scenery()        
         # document.bind("keydown", self.anda)
-        k = self.sprite_kiri(600, 400, 3)
+        self.k = self.sprite_kiri(600, 450, 4)
+        self.k.elt.bind("click", self.right)
+        
+
+    def right(self, evento):
+        self.sprite = (self.sprite-3 + 1) % 3 + 3
+        self.k = self.sprite_kiri(600, 450, self.sprite)
         
 
     def anda(self, evento):
@@ -72,10 +80,10 @@ class Lax:
     def sprite_kiri(self, x, y, item):
         """Near layer should be more spaced"""
         # item = ly+1
-        conta_, lado_ = KX - 1 if FX > 1 else 1, KY - 1 if FY > 1 else 1
+        conta_, lado_ = KX - 1 if KX > 1 else 1, KY - 1 if KY > 1 else 1
         dw, dh = (100/conta_)*(item % KX), (100/lado_)*(item // KX)
         bp = f"{dw:.2f}% {dh:.2f}%"
-        e = Elemento(KIRI, w= 100, h= 200, x=x, y=y, cena=self.c)
+        e = Elemento(KIRI, w=130, h=250, x=x, y=y, cena=self.c)
         e.elt.style.backgroundSize = f"{KX*100}% {KY*100}%"
         e.elt.style.backgroundPosition = bp
         return e.elt
