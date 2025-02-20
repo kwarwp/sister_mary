@@ -267,3 +267,10 @@ NameError: name 'p' is not defined
                          ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Thu Feb 20 2025 15:30:37.205 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 33
+  [mover(lay, 20 + 20* layer) for layer, lay in enumerate(self.layers)
+                                                                                                                                                                                         ^
+SyntaxError: invalid syntax
+'''},
