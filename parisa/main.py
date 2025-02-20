@@ -35,20 +35,20 @@ KIRI ="https://i.imgur.com/gPnv2KM.png"
 class Lax:
     def __init__(self):
         self.walk = self.right
-        self.sprite = 3
+        self.spriter = 3
         self.c = Cena(MATA0)
         self.c.elt.style.overflow="hidden"
         self.c.vai()
         self.layers = [Elemento(w=4000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
         self.scenery()        
         # document.bind("keydown", self.anda)
-        self.k = self.sprite_kiri(600, 450, 4)
+        self.k = self.sprite_kiri(600, 450, self.spriter)
         self.k.elt.bind("click", self.right)
         
 
     def right(self, evento):
-        self.sprite = (self.sprite-3 + 1) % 3 + 3
-        self.k = self.sprite_kiri(600, 450, self.sprite)
+        self.spriter = (self.spriter-3 + 1) % 3 + 3
+        self.k = self.sprite_kiri(600, 450, self.spriter)
         
 
     def anda(self, evento):
