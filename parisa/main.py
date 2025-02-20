@@ -4,6 +4,7 @@ from random import randint
 STYLE.update(width=1250, height="650px")
 FLORA = "https://i.imgur.com/n3GnL9B.png"
 MATA0 = "https://i.imgur.com/TT2FKyu.jpeg"
+TORA = "https://imgur.com/0jSB27g.png"
 FX, FY = 5, 4
 TREES = 500
 LAYERS = 8
@@ -25,19 +26,33 @@ class Lax:
         
     def scenery(self, trees=8):
         # tr = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 20*5*layer-randint(0,15), randint(0,20), layer)
+        fls = front_layer_size = 2000
+        flx = 600 - fls//2
         def sl(layer):
             return 8//(LAYERS - layer+1)*1200
-        [lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,15), layer)
+        #[lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,15), layer)
+        [lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), 0, layer)
+        for layer, lay in enumerate(self.layers) for item in range(0, trees)]
+        
+    def scenery_(self, trees=8):
+        # tr = [self.sprite(tr*(1200//trees)+randint(0,10)-100, 20*5*layer-randint(0,15), randint(0,20), layer)
+        fls = front_layer_size = 2000
+        flx = 600 - fls//2
+        def sl(layer):
+            return 8//(LAYERS - layer+1)*1200
+        #[lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,15), layer)
+        [lay.elt <= self.sprite(item*(sl(layer)//trees)+randint(0,10)-100, 350-randint(0,15), 0, layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         #self.layers = [[self.sprite(tr*(1200//trees)+randint(0,10)-100, 350-randint(0,15), randint(0,20), layer)
         #for tr in range(0, trees)] for layer in range(LAYERS,1,-1)]
         
     def sprite(self, x, y, item, layer):
         """Near layer should be more spaced"""
+        layer_delta_y = 400//LAYERS
         dw, dh, size = 100 // (FX-1), 100 // (FY-1), FX*FY
         ox, oy = item // FX, item % FX
         size = TREES - layer * 30
-        e = Elemento(FLORA, w=size, h=size, x=x, y=y-layer*30, cena=self.c)
+        e = Elemento(TORA, w=size, h=size, x=x, y=y-layer*layer_delta_y, cena=self.c)
         #e.o = layer / 10 + 0.2
         e.elt.style.backgroundSize = f"{FX*100}% {FY*100}%"
         e.elt.style.backgroundPosition = f"{ox*dw}% {oy*dh}%"
