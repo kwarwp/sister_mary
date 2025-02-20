@@ -16,7 +16,7 @@ class Lax:
         self.c = Cena(MATA0)
         self.c.elt.style.overflow="hidden"
         self.c.vai()
-        self.layers = [Elemento(w=2000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
+        self.layers = [Elemento(w=4000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
         self.scenery()        
         document.bind("keydown", self.anda)
 
@@ -32,13 +32,13 @@ class Lax:
             lay.x = lay.x +val
         [mover(lay, 20 + 40* layer) for layer, lay in enumerate(self.layers)]
 
-    def scenery(self, trees=16):
+    def scenery(self, trees=32):
         def off_lay(layer, off):
             scale = 1.0+ off /5.0
             layer.y = 150 + 100*off -300
             layer.x = layer.x + 65*off
             layer.elt.style.scale = scale
-        [lay.elt <= self.sprite(150*item-300, 350, randint(0,15), 1, layer)
+        [lay.elt <= self.sprite(150*item-00, 350, randint(0,15), 1, layer)
         for layer, lay in enumerate(self.layers) for item in range(0, trees)]
         [off_lay(lay, layer) for layer, lay in enumerate(self.layers)]
         
