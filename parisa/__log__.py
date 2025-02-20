@@ -260,3 +260,10 @@ SyntaxError: invalid syntax
     dw, dh = (100/conta_)*(p % FX), (100/lado_)*(p // FX)
 NameError: name 'p' is not defined
 '''},
+{'date': 'Thu Feb 20 2025 15:30:13.865 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 31
+  def mover(lay, val=20)
+                         ^
+SyntaxError: invalid syntax
+'''},
