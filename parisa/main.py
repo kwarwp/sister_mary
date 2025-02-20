@@ -35,7 +35,7 @@ KIRI ="https://i.imgur.com/gPnv2KM.png"
 class Lax:
     def __init__(self):
         self.walk = self.right
-        self.spriter = 3
+        self.spriter, self.spritel = 3, 2
         self.c = Cena(MATA0)
         self.c.elt.style.overflow="hidden"
         self.c.vai()
@@ -43,19 +43,29 @@ class Lax:
         self.scenery()        
         # document.bind("keydown", self.anda)
         self.kiri = Elemento(KIRI, w=130, h=250, x=600, y=400, cena=self.c)
-        self.k = self.sprite_kiri(600, 400, self.spriter, self.kiri)
-        self.k.bind("click", self.right)
+        kr = self.sprite_kiri(self.spriter, Elemento(KIRI, w=25, h=50, x=1200, y=400, cena=self.c, vai=self.right))
+        kl = self.sprite_kiri(self.spritel, Elemento(KIRI, w=25, h=50, x=0, y=400, cena=self.c, vai=self.right))
+        self.k = self.sprite_kiri(self.spriter, self.kiri)
+        #self.k.bind("click", self.right)
+        
+
+    def left(self, evento):
+        evento.stopPropagation()
+        evento.preventDefault()
+        self.spritel = (self.spritel + 1) % 3
+        self.move(40)
+        self.k = self.sprite_kiri(600, 450, self.spritel, self.kiri)
         
 
     def right(self, evento):
+        evento.stopPropagation()
+        evento.preventDefault()
         self.spriter = (self.spriter-3 + 1) % 3 + 3
+        self.move(-40)
         self.k = self.sprite_kiri(600, 450, self.spriter, self.kiri)
         
 
     def anda(self, evento):
-        global coisax, coisa
-        evento.stopPropagation()
-        evento.preventDefault()
         if(evento.keyCode == 37):
             self.move()
         elif (evento.keyCode == 39):
@@ -78,7 +88,7 @@ class Lax:
         [off_lay(lay, layer) for layer, lay in enumerate(self.layers)]
         
         
-    def sprite_kiri(self, x, y, item, e):
+    def sprite_kiri(self, item, e):
         """Near layer should be more spaced"""
         # item = ly+1
         conta_, lado_ = KX - 1 if KX > 1 else 1, KY - 1 if KY > 1 else 1
