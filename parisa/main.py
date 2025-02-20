@@ -1,4 +1,23 @@
 # sister_mary.parisa.main.py
+""""Pique de avalição da paralaxe para a plataforma Sucuri.
+
+Classes neste módulo:
+    - :py:class:`LAX` Spike to demonstrate a crude paralax mechanism.
+
+.. codeauthor:: Carlo Oliveira <carlo@nce.ufrj.br>
+
+Changelog
+---------
+.. versionadded::    25.02
+   |br| Crude scenery creation (18).
+   |br| key capture and paralax calculation (20).
+
+|   **Open Source Notification:** This file is part of open source program **Suucurijuba**
+|   **Copyright © 2025  Carlo Oliveira** <carlo@nce.ufrj.br>,
+|   **SPDX-License-Identifier:** `GNU General Public License v3.0 or later <http:#is.gd/3Udt>`_.
+|   `Labase <http:#labase.selfip.org/>`_ - `NCE <https:#portal.nce.ufrj.br>`_ - `UFRJ <https:#ufrj.br/>`_.
+"""
+
 from _spy.vitollino.main import Cena, Elemento, STYLE
 from browser import document
 from random import randint
@@ -9,6 +28,7 @@ TORA = "https://imgur.com/0jSB27g.png"
 FX, FY = 5, 4
 TREES = 300
 LAYERS = 8
+KIRI ="https://i.imgur.com/gPnv2KM.png"
 
 
 class Lax:
@@ -19,6 +39,7 @@ class Lax:
         self.layers = [Elemento(w=4000, h=700, cena=self.c) for _ in range(LAYERS)] #[list()]*LAYERS
         self.scenery()        
         document.bind("keydown", self.anda)
+        Elemento(KIRI, x=600, y=400, cena=self.c)
 
     def anda(self, evento):
         global coisax, coisa
