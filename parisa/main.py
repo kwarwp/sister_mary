@@ -44,7 +44,7 @@ class Lax:
         # document.bind("keydown", self.anda)
         self.kiri = Elemento(KIRI, w=130, h=250, x=600, y=400, cena=self.c)
         kr = self.sprite_kiri(self.spriter, Elemento(KIRI, w=25, h=50, x=1200, y=400, cena=self.c, vai=self.right))
-        kl = self.sprite_kiri(self.spritel, Elemento(KIRI, w=25, h=50, x=0, y=400, cena=self.c, vai=self.right))
+        kl = self.sprite_kiri(self.spritel, Elemento(KIRI, w=25, h=50, x=0, y=400, cena=self.c, vai=self.left))
         self.k = self.sprite_kiri(self.spriter, self.kiri)
         #self.k.bind("click", self.right)
         
@@ -54,7 +54,7 @@ class Lax:
         evento.preventDefault()
         self.spritel = (self.spritel + 1) % 3
         self.move(40)
-        self.k = self.sprite_kiri(600, 450, self.spritel, self.kiri)
+        self.k = self.sprite_kiri(self.spritel, self.kiri)
         
 
     def right(self, evento):
@@ -62,7 +62,7 @@ class Lax:
         evento.preventDefault()
         self.spriter = (self.spriter-3 + 1) % 3 + 3
         self.move(-40)
-        self.k = self.sprite_kiri(600, 450, self.spriter, self.kiri)
+        self.k = self.sprite_kiri(self.spriter, self.kiri)
         
 
     def anda(self, evento):
