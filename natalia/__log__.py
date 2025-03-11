@@ -15,3 +15,10 @@
     c = Cena(WALL)
 TypeError: 'module' object is not callable
 '''},
+{'date': 'Tue Mar 11 2025 11:20:39.826 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def pointer(self, angle)
+                           ^
+SyntaxError: invalid syntax
+'''},
