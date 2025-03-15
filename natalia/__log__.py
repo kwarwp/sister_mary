@@ -22,3 +22,10 @@ TypeError: 'module' object is not callable
                            ^
 SyntaxError: invalid syntax
 '''},
+{'date': 'Sat Mar 15 2025 11:25:11.55 GMt-0300 (Horário Padrão de Brasília) -X- SuPyGirls -X-',
+'error': '''
+ module <string> line 17
+  def pointer(self, angle)
+                           ^
+SyntaxError: invalid syntax
+'''},
