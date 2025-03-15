@@ -14,7 +14,7 @@ class Clock:
         self.second = Elemento(SPOT, x= 100, y=100, w=50, h=50, cena=c)
         c.vai()
         timer.set_interval(self.set_clock, 1000)
-    def pointer(self, angle)
+    def pointer(self, angle):
         width = height = 200
         ray, r1 = 80, 1
         """Draw a needle at specified angle in specified color.
@@ -45,4 +45,4 @@ class Clock:
     def set_clock(self):
         self.datetime()
 
-    
+Clock()
